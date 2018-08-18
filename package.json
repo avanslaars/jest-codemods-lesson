@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./src/**/*.spec.js --require babel-core/register",
-    "test:watch": "npm run test -- --watch"
+    "_test": "mocha ./src/**/*.spec.js --require babel-core/register",
+    "_test:watch": "npm run _test -- --watch",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
+    "jest": "^23.5.0",
     "mocha": "^5.2.0",
     "sinon": "^6.1.5"
   }
